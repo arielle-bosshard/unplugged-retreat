@@ -111,8 +111,8 @@ body {
  
 ul, 
 ol {
-  list-style-type: ;
-  line-height: ;
+  list-style-type: none;
+  line-height: 1em;
 }
  
 a {
@@ -122,15 +122,18 @@ a {
  
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
 }
  
 p {
-	
+  font-size: 1.125em;
+  line-height: 1.5em;
 }
  
 img {
@@ -142,7 +145,8 @@ figure {
 }
  
 address {
-  font-style: ;
+  font-style: normal;
+  
 }
  
 .content-wrapper {
