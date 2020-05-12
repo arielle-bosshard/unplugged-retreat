@@ -582,67 +582,61 @@ input[type=button] {
   /* General styles */
   .content-wrapper {
     max-width: 960px;
-    margin: 100px 0;
   }
   /* Header */
-  /* Hero Area */
+  /* Hero */
+  .hero-area h1 {
+    width: 60%;
+  }
+
   /* Aside */
   aside .content-wrapper {
-    margin: 80px 0;
-    display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
   }
   
   aside .content-wrapper .form-description, aside .content-wrapper .form {        
-    width: 28%;        
+    width: 30%;        
     margin: 0;
   }
 
   /* Features */
-.features article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
   flex-basis: 33%;
-}
+  }
 
-.features .features-item-description {
-  width: 50%;
-  text-align: center;
-}
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
 
-/* Reviews */
-/* Footer */
+  /* Footer */
 
-/***** About Page *****/
-.mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  /***** About Page *****/
+  .mission h2, .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
 
-.mission-content p {
+  .mission-content p {
   width: 45%;
-}
+  }
 
-.contact-section .content-wrapper h2 {
-  width: 100%;
-}
-
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-}
-  
-/**** FAQs Page *****/
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+    
+  /**** FAQs Page *****/
 
   .faq-content {
     flex-basis: 45%;
   }
+
   .faqs h2 {
     width: 100%;
   }
