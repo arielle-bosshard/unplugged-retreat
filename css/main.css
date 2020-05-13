@@ -732,7 +732,7 @@ input[type=button] {
   /* General styles */
   
   .content-wrapper {
-    max-width: 960px;
+    max-width: 1000px;
     margin: 100px 0;
   }
   h2 {
@@ -773,17 +773,15 @@ input[type=button] {
   }
 
   /* Features */
+  .features article {
+    flex-basis: 30%;
+    margin: 40px 10px;
+  }
   .features .features-item-description {
     width: 95%;
   }
   .features h2 {
     width: 90%;
-  }
-  .features article {
-  flex-basis: 33%;
-  }
-  .features article {
-    width: 100%;
   }
 
   /* Reviews */
