@@ -329,8 +329,6 @@ input[type=button] {
   margin: 30px 0px;
 }
 .features .fontawesome-icon {
-  width: 30%;
-  padding: 50px 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,8 +336,11 @@ input[type=button] {
 }
 .features p {
   margin: 0px;
-  text-align: center;
-  
+  text-align: center;  
+}
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
