@@ -125,6 +125,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 20px 0;
 }
  
 h3, 
@@ -155,7 +156,7 @@ address {
  
 .content-wrapper {
   width: 90%;
-  margin: 50px 0px;
+  margin: 30px 0px;
 }
 
 /*---------- Base header - footer styles -------------*/
@@ -183,18 +184,18 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-header .divider {
+header .header-divider {
   background: #3a3a3a; 
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 
 header nav {
@@ -209,11 +210,14 @@ header nav {
 }
 header nav ul {
   width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
 }
 header nav ul li {
   font-size: 1.125em;
+  padding: 0em 1.25em;
 }
 
 /* Footer Styles */
@@ -224,7 +228,7 @@ footer {
 }
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 footer h4 {
   text-align: center;
@@ -250,13 +254,10 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
-footer .social-icons p i {
-  font-size: 1.3125em;
-}
+
 footer .copyright {
   margin: 20px 0;
 }
-
 
 /*---------- Mobile styles - Homepage -------------*/
 
@@ -270,7 +271,11 @@ footer .copyright {
   justify-content: center;
   flex-flow: row wrap;
 }
+.hero-area .content-wrapper {
+  margin-bottom: 335px;
+}
 .hero-area h1 {
+  margin-top: 20px;
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif; 
   font-weight: 500; 
@@ -289,11 +294,14 @@ aside {
 aside .form {
   margin-top: 30px;
 }
- 
+ aside .form-description h3 {
+   margin: 0;
+ }
 input[type=text] {
+  font-size: 0.875em;
   box-sizing: border-box;
   width: 100%;
-  color: #2a423a;
+  color: #9d9ea4;
   font-style: italic;
   padding: 1em;
 }
@@ -301,7 +309,7 @@ input[type=text] {
 input[type=button] {
   width: 100%;
   padding: 20px 0;
-  margin-top: 20px;
+  margin: 20px 0;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -323,7 +331,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 .features h2 {
-  margin-top: 60px;
+  margin: 20px 0;
 }
 .features .features-items {
   display: flex;
@@ -378,6 +386,15 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
+.mission .content-wrapper {
+  margin: 50px 0;
+}
+.mission h2 {
+  margin: 0px;
+}
+
+/* Map */
+
 .map figure {
   width: 100%;
   height: 0;
@@ -393,9 +410,6 @@ input[type=button] {
   left: 0px;
 }
 
-/* Map */
-
-
 /* Contact Section */
 
 .contact-section {
@@ -404,6 +418,12 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.contact-section h2 {
+  margin: 20px 0;
+}
+.contact-content {
+  margin: 0px 0px 20px 0px;
 }
 .contact-content p{
   margin: 0px;
@@ -421,20 +441,21 @@ input[type=button] {
   flex-flow: row wrap;
 }
 .faqs .content-wrapper {
-  margin: 50px 0 0 0;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 .faqs h2 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   line-height: 1;
 }
 .faq-content {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .faq-content h4 {
+  margin: 40px 0 10px 0;
   line-height: 1.333;
 }
 
@@ -596,6 +617,9 @@ input[type=button] {
       width: 40%;        
       margin: 0;
   }
+  aside .content-wrapper .form h3 {
+    margin: 0px 0 15px 0;
+  }
 
   /* Features */
   .features h2 {
@@ -621,7 +645,10 @@ input[type=button] {
     width: 85%;
   }
   .reviews article figure {
-    width: 49%;        
+    width: 48%;        
+  }
+  .reviews .content-wrapper div {
+    width: 48%;
   }
   .reviews h3{
     width: 75%;
@@ -643,12 +670,15 @@ input[type=button] {
   footer .contact {
     margin-bottom: 0;
   }
+  footer .social {
+    width: 40%;
+  }
   footer h4 {
     font-size: 1.5em;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   footer p {
-    line-height: 1.285em;
+    line-height: 1.35em;
   }
   footer .copyright {
     width: 100%;
@@ -668,7 +698,6 @@ input[type=button] {
   .map figure {
     padding-bottom: 45.5%;
   }
-}
   .contact-section .content-wrapper h2 {
     width: 80%;
   } 
@@ -701,8 +730,10 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
   /* General styles */
+  
   .content-wrapper {
     max-width: 960px;
+    margin: 100px 0;
   }
   h2 {
     font-size: 2.25em;
@@ -734,7 +765,7 @@ input[type=button] {
     justify-content: space-around;
   }
   aside .content-wrapper .form-description, aside .content-wrapper .form {        
-    width: 30%;        
+    width: 45%;        
     margin: 0;
   }
   .form-description p {
@@ -742,11 +773,17 @@ input[type=button] {
   }
 
   /* Features */
+  .features .features-item-description {
+    width: 95%;
+  }
   .features h2 {
     width: 90%;
   }
   .features article {
   flex-basis: 33%;
+  }
+  .features article {
+    width: 100%;
   }
 
   /* Reviews */
