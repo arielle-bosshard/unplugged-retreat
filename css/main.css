@@ -657,6 +657,10 @@ input[type=button] {
   .mission-content p {
     width: 45%;
   } 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+}
   .contact-section .content-wrapper h2 {
     width: 80%;
   } 
@@ -758,7 +762,9 @@ input[type=button] {
     width: 95%;
     font-size: 3em;
   }
-
+  .map figure {
+    padding-bottom: 37.5%;
+  }
   .mission-content p {
   width: 45%;
   } /*= Not in teacher copy =*/
